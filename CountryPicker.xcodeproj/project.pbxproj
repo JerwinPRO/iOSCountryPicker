@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		5C3893022296CF8200A6D027 /* CountryPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C3893002296CF8200A6D027 /* CountryPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C3893092296D13700A6D027 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3893082296D13700A6D027 /* Countries.swift */; };
+		5C38930B22970EA100A6D027 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38930A22970EA100A6D027 /* Country.swift */; };
+		5C38930D229711D900A6D027 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38930C229711D900A6D027 /* CountryCell.swift */; };
+		5C38930F2297133800A6D027 /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38930E2297133800A6D027 /* CountryPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5C3892FD2296CF8200A6D027 /* CountryPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CountryPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C3893002296CF8200A6D027 /* CountryPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountryPicker.h; sourceTree = "<group>"; };
 		5C3893012296CF8200A6D027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C3893082296D13700A6D027 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		5C38930A22970EA100A6D027 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		5C38930C229711D900A6D027 /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		5C38930E2297133800A6D027 /* CountryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,10 @@
 			children = (
 				5C3893002296CF8200A6D027 /* CountryPicker.h */,
 				5C3893012296CF8200A6D027 /* Info.plist */,
+				5C3893082296D13700A6D027 /* Countries.swift */,
+				5C38930A22970EA100A6D027 /* Country.swift */,
+				5C38930C229711D900A6D027 /* CountryCell.swift */,
+				5C38930E2297133800A6D027 /* CountryPicker.swift */,
 			);
 			path = CountryPicker;
 			sourceTree = "<group>";
@@ -95,6 +107,7 @@
 				TargetAttributes = {
 					5C3892FC2296CF8100A6D027 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C38930F2297133800A6D027 /* CountryPicker.swift in Sources */,
+				5C38930B22970EA100A6D027 /* Country.swift in Sources */,
+				5C3893092296D13700A6D027 /* Countries.swift in Sources */,
+				5C38930D229711D900A6D027 /* CountryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +278,11 @@
 		5C3893062296CF8200A6D027 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = L8WPF5G5MR;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -277,7 +295,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.webappventures.CountryPicker;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,10 +306,11 @@
 		5C3893072296CF8200A6D027 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = L8WPF5G5MR;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -302,6 +323,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.webappventures.CountryPicker;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
